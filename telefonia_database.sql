@@ -78,6 +78,32 @@ LOCK TABLES `COMPANIES` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `CUSTOMERS`
+--
+
+DROP TABLE IF EXISTS `CUSTOMERS`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `CUSTOMERS` (
+  `ID` int(11) NOT NULL,
+  `NAME` varchar(20) NOT NULL,
+  `AGE` int(11) NOT NULL,
+  `ADDRESS` char(25) DEFAULT NULL,
+  `SALARY` decimal(18,2) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `CUSTOMERS`
+--
+
+LOCK TABLES `CUSTOMERS` WRITE;
+/*!40000 ALTER TABLE `CUSTOMERS` DISABLE KEYS */;
+/*!40000 ALTER TABLE `CUSTOMERS` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `OCCUPATIONS`
 --
 
@@ -163,4 +189,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-28 14:20:55
+-- Dump completed on 2021-04-28 14:44:44
